@@ -7,7 +7,7 @@ vn.connect_to_sqlite('https://vanna.ai/Chinook.sqlite')
 
 my_question = st.session_state.get("my_question", default=None)
 if my_question is None:
-    st.image("chinook-schema.png", use_column_width=True)
+    st.image("vanna_circle.png", use_column_width=True)
     my_question = st.text_input("Ask me a question that I can turn into SQL", key="my_question")
 else:
     st.title(my_question)
